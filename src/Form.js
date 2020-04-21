@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Form extends Component {
    initialState = {
       name: '',
-      job: '',
+      job: ''
    }
 
    state = this.initialState
@@ -40,6 +40,7 @@ class Form extends Component {
             id="job"
             value={job}
             onChange={this.handleChange} />
+          <label htmlFOr="job">Job</label>
           <input type="button" value="Submit" onClick={this.submitForm} />
         </form>
       )
